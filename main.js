@@ -20,11 +20,11 @@ document.querySelector('.tecla_puff').onclick = tocaSomPuff;
 const listaDeTeclas= document.querySelectorAll('.tecla');
 listaDeTeclas[1].onclick = tocaSomClap;
 let contador = 0;
-while(contator < 9){
+while(contador < 9){
     listaDeTeclas[contador].onclick = tocaSomClap;
     contador = contador + 1; 
     console.log (contador);
-    
+
 
 }
 
