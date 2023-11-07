@@ -20,15 +20,15 @@ function tocaSomPuff(){
 document.querySelector('.tecla_puff').onclick = tocaSomPuff;
 const listaDeTeclas= document.querySelectorAll('.tecla');
 listaDeTeclas[1].onclick = tocaSomClap;
-let contador = 0;
-while(contador < 9){
-    const efeito = listaDeTeclas[contador].classList [1];
-    const idAudio = '#som_'+efeito;
-        listaDeTeclas[contador].onclick = function(){
+
+for (let contador = 0;contador< listaDeTeclas.length;contador=contador++)
+    const efeito = tecla.classList [1];
+    const idAudio = `#som_${efeito}`;
+    tecla.onclick = function(){
 
     };
     contador = contador + 1; 
-    console.log (contador);
+    
 
 
 }
