@@ -24,14 +24,18 @@ listaDeTeclas[1].onclick = tocaSomClap;
 for (let contador = 0;contador< listaDeTeclas.length;contador=contador++)
     const efeito = tecla.classList [1];
     const idAudio = `#som_${efeito}`;
-    tecla.onclick = function(){
+    tecla.onclick = function(){ 
+        tocaSom(idAudio)
+     
 
     };
-    contador = contador + 1; 
+    tecla.onkeydown = function (){
+        tecla.classList.add('ativa');
+    }
     
 
 
-}
+
 
 
 
